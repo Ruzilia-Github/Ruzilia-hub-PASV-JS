@@ -1,0 +1,36 @@
+// 7. Дано целое положительное число. Получите массив его цифр, записанных в обратном порядке (от последней цифры к первой).
+
+// Напишите функцию с именем arrayOfDigits, которая принимает в качестве аргумента число n и возвращает массив его цифр в обратном порядке. Запрещено использование методов split, reverse. В решении используйте цикл do while.
+
+// Примеры:
+
+// функция arrayOfDigits(123456) должна возвратить [6, 5, 4, 3, 2, 1];
+// функция arrayOfDigits(1000) должна возвратить [0, 0, 0, 1];
+// функция arrayOfDigits(1) должна возвратить [1].
+
+
+function arrayOfDigits(n){
+let res = 0;
+let arr= [];
+do {
+res =0
+  res =  n % 10;
+  n = (n - n % 10) / 10;
+  arr.push(res)
+} while (n > 0)
+return arr;
+}
+
+console.log (arrayOfDigits(123456));
+console.log (arrayOfDigits(1000));
+console.log (arrayOfDigits(1));
+
+
+// function arrayOfDigits (n) {
+//   let str = n + ''
+//   let arr = []
+//   for (let i = str.length - 1; i >= 0; i--) {
+// arr.push(+str[i])
+//   }
+//   return arr
+// }
