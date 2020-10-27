@@ -1,0 +1,15 @@
+// 4.https://www.codewars.com/kata/57a049e253ba33ac5e000212/train/javascript
+
+// Yor task is to write function factorial
+
+// https://en.wikipedia.org/wiki/Factorial
+
+function factorial(n){
+let q = 1;
+let a = 1;
+while (q <= n){
+a = a * q;
+q++;
+}
+return a;
+}
