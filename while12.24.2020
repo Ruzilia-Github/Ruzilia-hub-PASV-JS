@@ -1,0 +1,23 @@
+function digitToWords(n){
+switch (n){
+    
+case 0: return [zero, zeroth]; break;
+case 1: return [one, first]; break;
+case 2: return [two, second]; break;
+case 3: return [three, third]; break;
+case 4: return [four, fourth]; break;
+case 5: return [five, fifth]; break;
+case 6: return [six, sixth]; break;
+case 7: return [seven, seventh]; break;
+case 8: return [eight, eighth]; break;
+case 9: return [nine, ninth]; break;
+case 10: return [ten, tenth]; break;
+case 11: return [eleven, eleventh]; break;
+case 12: return [twelve, twelfth]; break;
+default: return undefined;
+}
+}
+
+console.log (digitToWords(2));
+console.log (digitToWords(20));
+console.log (digitToWords(12));
